@@ -1,0 +1,28 @@
+# Archivos temporales
+*.tmp
+*.log
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Power BI
+*.pbix
+*.pbit
+
+# Excel temporales
+~$*.xlsx
+~$*.xls
+
+# Datos pesados
+*.csv
+*.xlsx
+*.xls
+*.zip
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
