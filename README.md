@@ -1,5 +1,12 @@
 # Plataforma BI para el monitoreo de puntos críticos de siniestralidad vial en el Perú
 
+# Integrantes:
+- Alessandra Munayco
+- Margot Torre
+- Daniela Torres
+- Milagros Valverde
+
+
 ## Descripción del proyecto
 
 Este proyecto propone el diseño de una solución de Business Intelligence para el análisis de siniestros de tránsito fatales en el Perú, utilizando datos abiertos del Observatorio Nacional de Seguridad Vial del Ministerio de Transportes y Comunicaciones.
