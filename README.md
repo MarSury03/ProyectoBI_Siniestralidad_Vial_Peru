@@ -311,22 +311,13 @@ La tabla de hechos FACT_VEHICULOS almacena información relacionada con los veh�
 
 # 7.Referencias
 
-Ministerio de Transportes y Comunicaciones. (2024). *Imprudencia del conductor y exceso de velocidad son las principales causas de accidentes en el país*. https://www.gob.pe/institucion/mtc/noticias/959363-imprudencia-del-conductor-y-exceso-de-velocidad-son-las-principales-causas-de-accidentes-en-el-pais
-
-Observatorio Nacional de Seguridad Vial. (s.f.). *Observatorio Nacional de Seguridad Vial*. https://www.onsv.gob.pe/
-
-Observatorio Nacional de Seguridad Vial. (2026). *Datos abiertos ONSV*. https://www.onsv.gob.pe/datosabiertos
-
-Organización Mundial de la Salud. (2023). *Traumatismos causados por el tránsito*. https://www.who.int/es/news-room/fact-sheets/detail/road-traffic-injuries
-
 Kimball, R., & Ross, M. (2013). The data warehouse toolkit: The definitive guide to dimensional modeling (3.ª ed.). Wiley.
-
-Microsoft. (2023). Power BI documentation. https://learn.microsoft.com/en-us/power-bi/ 
-
-Observatorio Nacional de Seguridad Vial. (2023). Estadísticas de siniestros de tránsito en el Perú. ONSV. https://www.onsv.gob.pe/datosabiertos 
-
+Microsoft. (2023). Power BI documentation. https://learn.microsoft.com/en-us/power-bi/
+Ministerio de Transportes y Comunicaciones. (2024). Imprudencia del conductor y exceso de velocidad son las principales causas de accidentes en el país. https://www.gob.pe/institucion/mtc/noticias/959363-imprudencia-del-conductor-y-exceso-de-velocidad-son-las-principales-causas-de-accidentes-en-el-pais
+Observatorio Nacional de Seguridad Vial. (s.f.). Observatorio Nacional de Seguridad Vial. https://www.onsv.gob.pe/
+Observatorio Nacional de Seguridad Vial. (2026). Datos abiertos ONSV. https://www.onsv.gob.pe/datosabiertos
 OpenStreetMap Contributors. (2023). Nominatim: Open geocoding API. https://nominatim.openstreetmap.org
-
+Organización Mundial de la Salud. (2023). Traumatismos causados por el tránsito. https://www.who.int/es/news-room/fact-sheets/detail/road-traffic-injuries
 
 
 ## Fuente de datos
