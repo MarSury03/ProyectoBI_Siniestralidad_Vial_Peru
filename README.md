@@ -33,13 +33,22 @@ Objetivo general
 Diseñar e implementar un Data Mart de siniestralidad vial que consolide y estructure la información proveniente de las bases de datos del ONSV —siniestros fatales, personas involucradas y vehículos involucrados— en un modelo multidimensional orientado al análisis, para el período 2021–2025.
 Objetivos específicos
 
-Integrar y depurar las fuentes de datos del ONSV correspondientes a siniestros fatales, personas involucradas y vehículos involucrados, mediante procesos de extracción, transformación y carga (ETL).
-Diseñar un modelo multidimensional que organice la información en dimensiones territoriales, temporales y descriptivas, facilitando el análisis de la siniestralidad vial desde múltiples perspectivas.
-Implementar el Data Mart en un entorno de base de datos relacional que garantice la integridad, consistencia y disponibilidad de la información consolidada.
-Desarrollar dashboards interactivos y herramientas de visualización que permitan identificar zonas críticas, patrones de ocurrencia y tendencias asociadas a los siniestros viales fatales en el Perú.
-Proveer una base analítica estructurada que apoye la formulación de políticas públicas y estrategias de prevención en materia de seguridad vial.
+- Integrar y depurar las fuentes de datos del ONSV correspondientes a siniestros fatales, personas involucradas y vehículos involucrados, mediante procesos de extracción, transformación y carga (ETL).
+  
+- Diseñar un modelo multidimensional que organice la información en dimensiones territoriales, temporales y descriptivas, facilitando el análisis de la siniestralidad vial desde múltiples perspectivas.
+  
+- Implementar el Data Mart en un entorno de base de datos relacional que garantice la integridad, consistencia y disponibilidad de la información consolidada.
+  
+- Desarrollar dashboards interactivos y herramientas de visualización que permitan identificar zonas críticas, patrones de ocurrencia y tendencias asociadas a los siniestros viales fatales en el Perú.
 
-# Referencias
+# 4.Descripción de datos
+
+
+
+# 5. Data Mart
+
+
+# 7.Referencias
 
 Ministerio de Transportes y Comunicaciones. (2024). *Imprudencia del conductor y exceso de velocidad son las principales causas de accidentes en el país*. https://www.gob.pe/institucion/mtc/noticias/959363-imprudencia-del-conductor-y-exceso-de-velocidad-son-las-principales-causas-de-accidentes-en-el-pais
 
