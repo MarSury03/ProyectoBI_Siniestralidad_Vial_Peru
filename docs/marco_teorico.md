@@ -13,3 +13,12 @@ El modelado dimensional organiza los datos analíticos en torno a una tabla de h
 El proceso ETL (Extracción, Transformación y Carga) es el responsable de mover los datos desde las fuentes origen hasta el Data Mart. La extracción obtiene los registros del ONSV; la transformación realiza limpieza, estandarización e integración de las tres bases de datos, así como el enriquecimiento geográfico mediante geocodificación inversa con OpenStreetMap para identificar las vías asociadas a cada siniestro; y la carga inserta los datos en las tablas dimensionales y de hechos. La implementación utiliza Visual Studio 2019 con proyectos SQL Server Integration Services (SSIS) y SQL Server como motor de base de datos.
 **5. Herramientas: Power BI y OpenStreetMap**
 Power BI es la plataforma de visualización de Microsoft que permite conectar el Data Mart, crear métricas con DAX y publicar dashboards interactivos con mapas georreferenciados, filtros dinámicos e indicadores clave (Microsoft, 2023). OpenStreetMap, a través de su API Nominatim, proporciona geocodificación inversa gratuita que enriquece los registros de siniestros con información sobre calles y tipos de vía, permitiendo identificar corredores viales de alta peligrosidad en el análisis espacial.
+
+# Referencias
+Kimball, R., & Ross, M. (2013). The data warehouse toolkit: The definitive guide to dimensional modeling (3.ª ed.). Wiley.
+
+Microsoft. (2023). Power BI documentation. https://learn.microsoft.com/en-us/power-bi/ 
+
+Observatorio Nacional de Seguridad Vial. (2023). Estadísticas de siniestros de tránsito en el Perú. ONSV. https://www.onsv.gob.pe/datosabiertos 
+
+OpenStreetMap Contributors. (2023). Nominatim: Open geocoding API. https://nominatim.openstreetmap.org
