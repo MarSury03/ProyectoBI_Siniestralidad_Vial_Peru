@@ -45,7 +45,7 @@ Objetivos específicos
   
 - Desarrollar dashboards interactivos y herramientas de visualización que permitan identificar zonas críticas, patrones de ocurrencia y tendencias asociadas a los siniestros viales fatales en el Perú.
 
-# 4.Descripción de datos -- Data Mart de Siniestralidad Vial
+# 4. Descripción de datos -- Data Mart de Siniestralidad Vial
 
 ## DIM_FECHA
 
