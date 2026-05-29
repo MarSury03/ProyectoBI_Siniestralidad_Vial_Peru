@@ -311,6 +311,15 @@ Observatorio Nacional de Seguridad Vial. (2026). *Datos abiertos ONSV*. https://
 
 Organización Mundial de la Salud. (2023). *Traumatismos causados por el tránsito*. https://www.who.int/es/news-room/fact-sheets/detail/road-traffic-injuries
 
+Kimball, R., & Ross, M. (2013). The data warehouse toolkit: The definitive guide to dimensional modeling (3.ª ed.). Wiley.
+
+Microsoft. (2023). Power BI documentation. https://learn.microsoft.com/en-us/power-bi/ 
+
+Observatorio Nacional de Seguridad Vial. (2023). Estadísticas de siniestros de tránsito en el Perú. ONSV. https://www.onsv.gob.pe/datosabiertos 
+
+OpenStreetMap Contributors. (2023). Nominatim: Open geocoding API. https://nominatim.openstreetmap.org
+
+
 
 ## Fuente de datos
 
