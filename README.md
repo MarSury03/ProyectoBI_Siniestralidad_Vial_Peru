@@ -306,6 +306,7 @@ La tabla de hechos FACT_VEHICULOS almacena informaci√≥n relacionada con los veh√
 
 
 # 5. Data Mart
+<img width="1459" height="917" alt="image" src="https://github.com/user-attachments/assets/a258e056-f282-4502-aa99-29880c2f5bc9" />
 
 
 # 7.Referencias
