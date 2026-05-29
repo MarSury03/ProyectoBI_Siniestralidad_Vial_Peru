@@ -311,7 +311,7 @@ La tabla de hechos FACT_VEHICULOS almacena información relacionada con los veh�
 | vehiculo_sin_revision | INT | Indicador de vehículo sin CITV o revisión técnica vigente. |
 
 
-# 5. Data Mart
+# 5. Modelo Multidimensional
 <img width="1459" height="917" alt="image" src="https://github.com/user-attachments/assets/a258e056-f282-4502-aa99-29880c2f5bc9" />
 
 
