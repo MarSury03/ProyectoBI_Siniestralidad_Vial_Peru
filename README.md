@@ -13,6 +13,12 @@ Este proyecto propone el diseño de una solución de Business Intelligence para 
 
 La propuesta se centra en la construcción de un Data Mart que permita integrar información sobre siniestros, personas involucradas y vehículos involucrados, con el objetivo de facilitar el análisis territorial, temporal y descriptivo de la siniestralidad vial fatal.
 
+Bases consideradas:
+
+Siniestros de tránsito fatales 2021-2025.
+Personas involucradas en siniestros de tránsito fatales 2021-2025.
+Vehículos involucrados en siniestros de tránsito fatales 2021-2025.
+
 ## Primera entrega
 
 La primera entrega contiene:
