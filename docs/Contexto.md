@@ -1,4 +1,4 @@
-# Contexto
+# Contexto y Problemática
 
 La seguridad vial es un tema de alta relevancia para la gestión pública, la movilidad urbana y la salud de la población. A nivel mundial, los siniestros de tránsito continúan representando una de las principales causas de muerte y lesiones graves. Según la Organización Mundial de la Salud, alrededor de 1,19 millones de personas fallecen cada año como consecuencia de accidentes de tránsito, y estos eventos son la principal causa de muerte en niños y jóvenes de 5 a 29 años (Organización Mundial de la Salud [OMS], 2023).
 
