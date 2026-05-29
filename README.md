@@ -11,24 +11,22 @@
 
 Este proyecto propone el diseño de una solución de Business Intelligence para el análisis de siniestros de tránsito fatales en el Perú, utilizando datos abiertos del Observatorio Nacional de Seguridad Vial del Ministerio de Transportes y Comunicaciones.
 
-La propuesta se centra en la construcción de un Data Mart que permita integrar información sobre siniestros, personas involucradas y vehículos involucrados, con el objetivo de facilitar el análisis territorial, temporal y descriptivo de la siniestralidad vial fatal.
+La propuesta se centra en la construcción de un Data Warehouse que permita integrar información sobre siniestros, personas involucradas y vehículos involucrados, con el objetivo de facilitar el análisis territorial, temporal y descriptivo de la siniestralidad vial fatal.
 
-Bases consideradas:
-
+Las bases consideradas fueron: 
 Siniestros de tránsito fatales 2021-2025.
 Personas involucradas en siniestros de tránsito fatales 2021-2025.
 Vehículos involucrados en siniestros de tránsito fatales 2021-2025.
 
-## Primera entrega
-
-La primera entrega contiene:
+## Entrega Parcial
+La primera entrega contiene los siguientes puntos:
 
 - Contexto
 - Problemática
 - Objetivos
 - Marco teórico
 - Descripción de datos
-- Modelo multidimensional
+- Modelo Data Wareohouse
 
 # 1. Contexto
 La seguridad vial constituye uno de los ejes fundamentales de la gestión pública contemporánea, pues articula la movilidad urbana sostenible con la protección de la vida y la salud de la población. A nivel mundial, los siniestros de tránsito representan un problema de salud pública de primera magnitud: según la Organización Mundial de la Salud (OMS, 2023), aproximadamente 1,19 millones de personas pierden la vida cada año a causa de accidentes de tránsito, siendo estos la principal causa de muerte entre niños, adolescentes y jóvenes de 5 a 29 años. Estas cifras no solo reflejan una tragedia humana de proporciones alarmantes, sino que también revelan la urgencia de comprender con mayor precisión las circunstancias en que ocurren los siniestros y los factores que determinan su frecuencia y gravedad.
@@ -53,7 +51,7 @@ Frente a esta necesidad, el presente proyecto propone el diseño e implementaci�
 
 # 3. Objetivos
 Objetivo general
-Diseñar e implementar un Data Mart de siniestralidad vial que consolide y estructure la información proveniente de las bases de datos del ONSV —siniestros fatales, personas involucradas y vehículos involucrados— en un modelo multidimensional orientado al análisis, para el período 2021–2025.
+Diseñar e implementar un Data Warehouse de siniestralidad vial que consolide y estructure la información proveniente de las bases de datos del ONSV —siniestros fatales, personas involucradas y vehículos involucrados— en un modelo multidimensional orientado al análisis, para el período 2021–2025.
 Objetivos específicos
 
 - Integrar y depurar las fuentes de datos del ONSV correspondientes a siniestros fatales, personas involucradas y vehículos involucrados, mediante procesos de extracción, transformación y carga (ETL).
