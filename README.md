@@ -81,30 +81,41 @@ Diseñar e implementar un Data Warehouse de siniestralidad vial que consolide y 
 
 # 6. Marco teórico
 
-**1.Business Intelligence**
+## 6.1 Business Intelligence
 
-Business Intelligence (BI) es el conjunto de estrategias, procesos y tecnologías que permiten transformar datos brutos en información útil para la toma de decisiones. Un sistema de BI integra datos de múltiples fuentes, los estandariza y los presenta mediante interfaces visuales e interactivas. En el presente proyecto, BI se aplica al dominio de la seguridad vial, convirtiendo los registros del Observatorio Nacional de Seguridad Vial (ONSV) en un tablero analítico que facilita la identificación de patrones de riesgo.
+Business Intelligence (BI) comprende el conjunto de procesos, metodologías y herramientas que permiten transformar datos en información útil para la toma de decisiones. En un proyecto de BI, los datos son extraídos desde distintas fuentes, integrados, organizados y presentados mediante indicadores o dashboards que facilitan el análisis.
 
+En el presente proyecto, BI se aplica al análisis de siniestros de tránsito fatales en el Perú, a partir de datos abiertos del Observatorio Nacional de Seguridad Vial. La solución permite convertir registros dispersos sobre siniestros, personas y vehículos en información estructurada para identificar patrones y puntos críticos de siniestralidad vial.
 
-**2.Data Warehouse y Data Mart**
+## 6.2 Data Warehouse
 
-El Data Warehouse (DW) es un repositorio centralizado que consolida datos históricos provenientes de distintos sistemas operacionales, transformados para garantizar consistencia y calidad analítica (Kimball & Ross, 2013). Un Data Mart es un subconjunto del DW orientado a un área específica del negocio, más rápido de implementar y enfocado en necesidades concretas. Para este proyecto se diseña un Data Mart de Siniestralidad Vial que integra las bases de siniestros, personas y vehículos del ONSV correspondientes al período 2021–2025.
+Un Data Warehouse es un repositorio centralizado y orientado al análisis, diseñado para consolidar información proveniente de distintas fuentes. A diferencia de una base de datos operacional, su finalidad es facilitar consultas, análisis histórico, generación de indicadores y apoyo a la toma de decisiones.
 
+En este proyecto, el Data Warehouse integra información de tres fuentes principales: siniestros de tránsito fatales, personas involucradas y vehículos involucrados. Esta integración permite superar la fragmentación inicial de los datos y contar con una estructura común para analizar la siniestralidad vial desde distintas perspectivas.
 
-**3.Modelado Dimensional**
+## 6.3 Modelado dimensional
 
-El modelado dimensional organiza los datos analíticos en torno a tablas de hechos —que contienen las métricas cuantitativas del proceso, como el número de fallecidos, lesionados o vehículos involucrados— rodeadas de tablas de dimensiones que proveen el contexto descriptivo: tiempo, ubicación, vehículo, vía, persona, causa, clima y señalización, entre otras. El esquema galaxia (Galaxy Schema), adoptado en este proyecto, extiende el modelo estrella al incorporar múltiples tablas de hechos —FACT_SINIESTROS, FACT_PERSONAS y FACT_VEHICULOS— que comparten dimensiones comunes, permitiendo analizar el fenómeno de la siniestralidad desde perspectivas complementarias con mayor riqueza analítica. 
+El modelado dimensional es una técnica utilizada en soluciones de BI para organizar la información en tablas de hechos y tablas de dimensiones. Las tablas de hechos contienen los eventos o métricas principales del proceso analizado, mientras que las dimensiones describen el contexto desde el cual se analizan dichos hechos.
 
+En el proyecto, las tablas de hechos permiten analizar los siniestros, las personas involucradas y los vehículos asociados. Las dimensiones, por su parte, permiten estudiar estos hechos desde variables como fecha, ubicación, vía, causa, clima, señalización, persona, licencia, dosaje, gravedad, vehículo, modalidad de transporte y seguridad vehicular.
 
-**4.Proceso ETL**
+## 6.4 Esquema galaxia
 
-El proceso ETL (Extracción, Transformación y Carga) es el responsable de mover los datos desde las fuentes origen hasta el Data Mart. La extracción obtiene los registros del ONSV; la transformación realiza limpieza, estandarización e integración de las tres bases de datos, así como el enriquecimiento geográfico mediante geocodificación inversa con OpenStreetMap para identificar las vías asociadas a cada siniestro; y la carga inserta los datos en las tablas dimensionales y de hechos. La implementación utiliza Visual Studio 2019 con proyectos SQL Server Integration Services (SSIS) y SQL Server como motor de base de datos.
+El esquema galaxia, también conocido como constelación de hechos, es un tipo de modelo dimensional que utiliza varias tablas de hechos conectadas a dimensiones compartidas. Este enfoque permite analizar un fenómeno desde diferentes procesos o niveles de detalle.
 
+En el Data Warehouse propuesto se utiliza un esquema galaxia porque existen tres tablas de hechos: `FACT_SINIESTROS`, `FACT_PERSONAS` y `FACT_VEHICULOS`. Esta estructura permite analizar la siniestralidad vial desde el evento, las personas involucradas y los vehículos asociados, manteniendo dimensiones comunes para facilitar el análisis integrado.
 
-**5.Herramientas: Power BI y OpenStreetMap**
+## 6.5 Proceso ETL
 
-Power BI es la plataforma de visualización de Microsoft que permite conectar el Data Mart, crear métricas con DAX y publicar dashboards interactivos con mapas georreferenciados, filtros dinámicos e indicadores clave (Microsoft, 2023). OpenStreetMap, a través de su API Nominatim, proporciona geocodificación inversa gratuita que enriquece los registros de siniestros con información sobre calles y tipos de vía, permitiendo identificar corredores viales de alta peligrosidad en el análisis espacial.
+El proceso ETL comprende las etapas de extracción, transformación y carga de datos. La extracción obtiene los datos desde las fuentes originales; la transformación permite limpiar, estandarizar e integrar la información; y la carga inserta los datos procesados en el Data Warehouse.
 
+En este proyecto, el proceso ETL permite convertir las bases originales del ONSV en tablas dimensionales y tablas de hechos. Este proceso es necesario para asegurar que la información esté organizada, relacionada y preparada para su análisis mediante dashboards.
+
+## 6.6 Visualización de datos
+
+La visualización de datos permite representar información compleja mediante gráficos, tablas, mapas e indicadores que facilitan su interpretación. En Business Intelligence, los dashboards permiten explorar los datos de manera interactiva y comunicar hallazgos relevantes para la toma de decisiones.
+
+En el proyecto, el dashboard desarrollado en Streamlit permite visualizar los principales indicadores de siniestralidad vial fatal, facilitando la identificación de zonas críticas, tendencias y patrones asociados a los siniestros de tránsito.
 
 # 7. Descripción de datos -- Data Mart de Siniestralidad Vial
 
