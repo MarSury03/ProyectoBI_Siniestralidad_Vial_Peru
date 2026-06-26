@@ -18,15 +18,6 @@ Las bases consideradas fueron:
 * Personas involucradas en siniestros de tránsito fatales 2021-2025.
 * Vehículos involucrados en siniestros de tránsito fatales 2021-2025.
 
-## Entrega Parcial
-La primera entrega contiene los siguientes puntos:
-
-- Contexto
-- Problemática
-- Objetivos
-- Marco teórico
-- Descripción de datos
-- Modelo Data Wareohouse
 
 # 1. Contexto
 La seguridad vial constituye uno de los ejes fundamentales de la gestión pública contemporánea, pues articula la movilidad urbana sostenible con la protección de la vida y la salud de la población. A nivel mundial, los siniestros de tránsito representan un problema de salud pública de primera magnitud: según la Organización Mundial de la Salud (OMS, 2023), aproximadamente 1,19 millones de personas pierden la vida cada año a causa de accidentes de tránsito, siendo estos la principal causa de muerte entre niños, adolescentes y jóvenes de 5 a 29 años. Estas cifras no solo reflejan una tragedia humana de proporciones alarmantes, sino que también revelan la urgencia de comprender con mayor precisión las circunstancias en que ocurren los siniestros y los factores que determinan su frecuencia y gravedad.
@@ -38,32 +29,57 @@ En el Perú, la siniestralidad vial constituye un desafío estructural para las 
 Frente a este escenario, el Estado peruano ha desarrollado mecanismos institucionales orientados a mejorar la gestión de la información sobre seguridad vial. El Ministerio de Transportes y Comunicaciones (MTC) es el organismo rector encargado de conducir las políticas nacionales en materia de transportes, tránsito, regulación del transporte terrestre, fiscalización y seguridad vial. En ese marco, creó el Observatorio Nacional de Seguridad Vial (ONSV), plataforma especializada cuya función es sistematizar, analizar y difundir información sobre los riesgos, causas y consecuencias de los siniestros viales, utilizando buenas prácticas en la gestión de datos, con la finalidad de servir como insumo para que las entidades competentes mejoren las políticas de prevención, fiscalización y respuesta frente a los hechos de tránsito (ONSV, s.f.).
 
 Desde su implementación en 2021, el ONSV ha contribuido al registro georreferenciado y oportuno de los siniestros de tránsito con consecuencias fatales, permitiendo que las instituciones rectoras en materia de seguridad vial y los distintos niveles de gobierno cuenten con evidencia para diseñar acciones de prevención y fiscalización (MTC, 2024). Como parte de esta iniciativa, el Observatorio pone a disposición un portal de datos abiertos que contiene información sobre siniestros fatales, personas involucradas y vehículos asociados a nivel nacional durante el período 2021–2025, constituyendo una fuente oficial, real y de alto impacto para investigadores, instituciones públicas y tomadores de decisiones.
+# 2. Descripción de la institución
 
-# 2. Problemática
-A pesar de la disponibilidad de estos registros, su mera existencia no garantiza su utilidad analítica. La información publicada por el ONSV se encuentra distribuida en diferentes archivos y estructuras de almacenamiento —una base contiene los datos del evento, otra describe a las personas involucradas y otra detalla los vehículos asociados— sin que estas fuentes se encuentren integradas en una estructura orientada al análisis. Esta fragmentación impide comprender cómo se relacionan las variables territoriales, temporales, humanas y vehiculares de los siniestros, limitando severamente la capacidad de extraer conclusiones útiles a partir de los datos disponibles.
+El proyecto toma como institución de referencia al Ministerio de Transportes y Comunicaciones del Perú, entidad pública responsable de formular, dirigir y supervisar políticas relacionadas con el transporte, el tránsito, la infraestructura vial y la seguridad vial a nivel nacional.
 
-Como consecuencia, las instituciones responsables de la seguridad vial se ven impedidas de responder con agilidad preguntas clave para la gestión del problema, tales como: ¿en qué departamentos, provincias o distritos se concentran más siniestros fatales?, ¿qué tipos de vehículos aparecen con mayor frecuencia en estos eventos?, ¿qué características presentan las personas involucradas?, ¿existen periodos del año con mayor concentración de siniestros?, o ¿qué zonas deberían priorizarse para acciones de prevención, fiscalización o mejora de infraestructura?
-En otras palabras, existe una brecha concreta entre la disponibilidad de los datos y su efectivo aprovechamiento: los registros existen, pero no están organizados en una estructura que permita responder estas preguntas de forma oportuna y confiable. La ausencia de un modelo analítico integrado restringe la capacidad institucional para identificar patrones, detectar tendencias y diseñar intervenciones focalizadas basadas en evidencia. Para que estos registros públicos puedan apoyar realmente la toma de decisiones, es necesario integrarlos, depurarlos, transformarlos y organizarlos en un modelo multidimensional que facilite su análisis desde distintas perspectivas.
+Dentro de este marco institucional, el análisis se enfoca en el Observatorio Nacional de Seguridad Vial, plataforma especializada que recopila, sistematiza y difunde información sobre los siniestros de tránsito ocurridos en el país. Esta plataforma pone a disposición datos abiertos sobre siniestros fatales, personas involucradas y vehículos asociados, constituyéndose en una fuente relevante para el análisis de la seguridad vial en el Perú.
 
-Frente a esta necesidad, el presente proyecto propone el diseño e implementación de un Data Mart de siniestralidad vial que consolide las fuentes de datos del ONSV en un modelo multidimensional compuesto por una tabla de hechos y diversas dimensiones de análisis. Esta solución, enmarcada en la perspectiva del Business Intelligence, permitirá transformar registros públicos dispersos en información estructurada y accionable, sentando las bases para el desarrollo de dashboards en Power BI que faciliten la identificación de zonas críticas, tendencias y factores asociados a la siniestralidad vial fatal en el Perú.
+La información publicada por el Observatorio permite conocer la magnitud del problema y sirve como insumo para el diseño de políticas públicas, campañas de prevención, acciones de fiscalización y estrategias de mejora vial. Sin embargo, al encontrarse distribuida en bases separadas, requiere ser integrada y organizada en una estructura analítica que facilite su consulta e interpretación.
+
+En ese sentido, el presente proyecto propone la creación de un Data Warehouse dimensional que consolide la información del Observatorio Nacional de Seguridad Vial en un modelo orientado al análisis. Esta solución busca mejorar el aprovechamiento de los datos disponibles y apoyar la identificación de puntos críticos de siniestralidad vial fatal.
+# 3. Fuentes de datos
+
+Para la construcción del Data Warehouse se utilizaron datos abiertos del **Observatorio Nacional de Seguridad Vial (ONSV)** del **Ministerio de Transportes y Comunicaciones (MTC)**, correspondientes al periodo **2021-2025**.
+
+| Fuente de datos                    | Contenido principal                                                                                                                 | Uso en el Data Warehouse                                                                           |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Siniestros de tránsito fatales** | Información del evento vial: fecha, ubicación, tipo de vía, causa, clima, señalización, fallecidos, lesionados y vehículos dañados. | Base para `FACT_SINIESTROS` y dimensiones como fecha, ubicación, vía, causa, clima y señalización. |
+| **Personas involucradas**          | Información de las personas asociadas al siniestro: tipo de persona, sexo, edad, gravedad, licencia y dosaje etílico.               | Base para `FACT_PERSONAS` y dimensiones como persona, licencia, dosaje y gravedad.                 |
+| **Vehículos involucrados**         | Información de los vehículos asociados al siniestro: tipo de vehículo, modalidad de transporte, SOAT, seguro y CITV.                | Base para `FACT_VEHICULOS` y dimensiones como vehículo, modalidad y seguridad vehicular.           |
+
+Estas fuentes fueron integradas mediante el **código del siniestro**, permitiendo relacionar los eventos viales con las personas y vehículos involucrados para su posterior análisis en el dashboard.
+
+**Fuente oficial:**
+[Observatorio Nacional de Seguridad Vial - Datos abiertos](https://www.onsv.gob.pe/datosabiertos)
 
 
+# 4. Problemática
+El Observatorio Nacional de Seguridad Vial dispone de datos abiertos sobre siniestros de tránsito fatales, personas involucradas y vehículos involucrados. No obstante, esta información se encuentra distribuida en archivos independientes, lo que dificulta su análisis conjunto y limita la capacidad de obtener conclusiones integrales sobre el comportamiento de la siniestralidad vial en el Perú.
 
-# 3. Objetivos
-Objetivo general
+La base de siniestros contiene información del evento vial, como fecha, ubicación, causa, tipo de vía, condiciones climáticas y señalización. Por otro lado, la base de personas describe características de los involucrados, como tipo de persona, sexo, edad, gravedad, licencia y dosaje. Finalmente, la base de vehículos contiene información sobre tipo de vehículo, modalidad de transporte, SOAT y CITV. Aunque cada fuente aporta datos relevantes, su análisis por separado no permite comprender de manera completa la relación entre el evento, las personas y los vehículos asociados.
+
+Esta fragmentación genera una brecha entre la disponibilidad de datos y su aprovechamiento para la toma de decisiones. En su estado original, los registros requieren cruces manuales, limpieza previa y procesos de interpretación que dificultan responder con rapidez preguntas clave como: qué departamentos, provincias o distritos concentran más siniestros fatales; qué tipos de vehículos aparecen con mayor frecuencia; qué características presentan las personas involucradas; qué causas son más recurrentes; y qué zonas deberían priorizarse para acciones de prevención o fiscalización.
+
+Por ello, el problema central identificado es la falta de una estructura integrada de Business Intelligence que permita consolidar, depurar, modelar y visualizar la información de siniestros viales fatales. Esta ausencia limita la identificación de patrones críticos, la detección de tendencias y la generación de información accionable para la gestión de la seguridad vial.
+
+Frente a esta problemática, el proyecto plantea el diseño e implementación de un Data Warehouse dimensional basado en un esquema galaxia, compuesto por tablas de hechos y dimensiones de análisis. Esta solución permite integrar las fuentes de siniestros, personas y vehículos en una estructura común, facilitando el análisis multidimensional y el desarrollo de dashboards interactivos para monitorear puntos críticos de siniestralidad vial fatal en el Perú.
+
+# 5. Objetivos
+## 5.1. Objetivo general
 Diseñar e implementar un Data Warehouse de siniestralidad vial que consolide y estructure la información proveniente de las bases de datos del ONSV —siniestros fatales, personas involucradas y vehículos involucrados— en un modelo multidimensional orientado al análisis, para el período 2021–2025.
-Objetivos específicos
+## 5.2. Objetivos específicos
 
 - Integrar y depurar las fuentes de datos del ONSV correspondientes a siniestros fatales, personas involucradas y vehículos involucrados, mediante procesos de extracción, transformación y carga (ETL).
   
 - Diseñar un modelo multidimensional que organice la información en dimensiones territoriales, temporales y descriptivas, facilitando el análisis de la siniestralidad vial desde múltiples perspectivas.
   
-- Implementar el Data Mart en un entorno de base de datos relacional que garantice la integridad, consistencia y disponibilidad de la información consolidada.
+- Implementar el Data Warehouse en un entorno de base de datos relacional que garantice la integridad, consistencia y disponibilidad de la información consolidada.
   
 - Desarrollar dashboards interactivos y herramientas de visualización que permitan identificar zonas críticas, patrones de ocurrencia y tendencias asociadas a los siniestros viales fatales en el Perú.
 
 
-# 4. Marco teórico
+# 6. Marco teórico
 
 **1.Business Intelligence**
 
@@ -90,7 +106,7 @@ El proceso ETL (Extracción, Transformación y Carga) es el responsable de mover
 Power BI es la plataforma de visualización de Microsoft que permite conectar el Data Mart, crear métricas con DAX y publicar dashboards interactivos con mapas georreferenciados, filtros dinámicos e indicadores clave (Microsoft, 2023). OpenStreetMap, a través de su API Nominatim, proporciona geocodificación inversa gratuita que enriquece los registros de siniestros con información sobre calles y tipos de vía, permitiendo identificar corredores viales de alta peligrosidad en el análisis espacial.
 
 
-# 5. Descripción de datos -- Data Mart de Siniestralidad Vial
+# 7. Descripción de datos -- Data Mart de Siniestralidad Vial
 
 ## DIM_FECHA
 
@@ -315,11 +331,11 @@ La tabla de hechos FACT_VEHICULOS almacena información relacionada con los veh�
 | vehiculo_sin_revision | INT | Indicador de vehículo sin CITV o revisión técnica vigente. |
 
 
-# 5. Modelo Multidimensional
+# 8. Modelo Multidimensional
 <img width="1459" height="917" alt="image" src="https://github.com/user-attachments/assets/a258e056-f282-4502-aa99-29880c2f5bc9" />
 
 
-# 7.Referencias
+# 9.Referencias
 
 Kimball, R., & Ross, M. (2013). The data warehouse toolkit: The definitive guide to dimensional modeling (3.ª ed.). Wiley.
 Microsoft. (2023). Power BI documentation. https://learn.microsoft.com/en-us/power-bi/
