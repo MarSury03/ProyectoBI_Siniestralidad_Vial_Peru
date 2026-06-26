@@ -76,7 +76,7 @@ Diseñar e implementar un Data Warehouse de siniestralidad vial que consolide y 
   
 - Implementar el Data Warehouse en un entorno de base de datos relacional que garantice la integridad, consistencia y disponibilidad de la información consolidada.
   
-- Desarrollar dashboards interactivos y herramientas de visualización que permitan identificar zonas críticas, patrones de ocurrencia y tendencias asociadas a los siniestros viales fatales en el Perú.
+- Desarrollar un dashboard interactivo en Streamlit que permita identificar zonas críticas, patrones de ocurrencia y tendencias asociadas a los siniestros viales fatales en el Perú..
 
 
 # 6. Marco teórico
