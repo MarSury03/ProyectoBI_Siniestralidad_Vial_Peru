@@ -493,9 +493,9 @@ La propuesta es factible porque utiliza datos abiertos, herramientas accesibles 
 
 | Factor                | Descripción                                                                                                                                                                                                                                |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Tiempo                | La implementación inicial del Data Warehouse y dashboard puede desarrollarse en un periodo aproximado de 4 a 6 semanas. La actualización posterior puede realizarse de forma periódica según disponibilidad de nuevas bases del ONSV.      |
+| Tiempo                | La implementación inicial del Data Warehouse y dashboard puede desarrollarse en un periodo aproximado de 2 a 4 semanas. La actualización posterior puede realizarse de forma periódica según disponibilidad de nuevas bases del ONSV.      |
 | Recursos humanos      | Se requiere un equipo básico compuesto por un analista de datos, un responsable de carga y transformación de datos, y un usuario funcional que interprete los resultados desde el enfoque de seguridad vial.                               |
-| Recursos tecnológicos | SQL Server para el almacenamiento y modelamiento de datos, scripts SQL para la carga del Data Warehouse y Streamlit para el dashboard interactivo.                                                                                         |
+| Recursos tecnológicos | SQL Server para el almacenamiento y modelamiento de datos, scripts SQL para la carga del Data Warehouse, Python y Streamlit para el dashboard interactivo.                                                                                         |
 | Costos                | Los costos son bajos a moderados, debido a que se utilizan datos abiertos y herramientas accesibles. Los principales costos estarían asociados al tiempo del equipo responsable, alojamiento del dashboard y mantenimiento de la solución. |
 | Beneficios esperados  | Mejor identificación de puntos críticos, reducción del tiempo de análisis, priorización de acciones de fiscalización y apoyo a campañas preventivas basadas en evidencia.                                                                  |
 
@@ -529,14 +529,14 @@ La propuesta es factible porque utiliza datos abiertos, herramientas accesibles 
 
 # 12.Referencias
 
-Kimball, R., & Ross, M. (2013). The data warehouse toolkit: The definitive guide to dimensional modeling (3.ª ed.). Wiley.
-Ministerio de Transportes y Comunicaciones. (2024). Imprudencia del conductor y exceso de velocidad son las principales causas de accidentes en el país. https://www.gob.pe/institucion/mtc/noticias/959363-imprudencia-del-conductor-y-exceso-de-velocidad-son-las-principales-causas-de-accidentes-en-el-pais
-Observatorio Nacional de Seguridad Vial. (s.f.). Observatorio Nacional de Seguridad Vial. https://www.onsv.gob.pe/
-Observatorio Nacional de Seguridad Vial. (2026). Datos abiertos ONSV. https://www.onsv.gob.pe/datosabiertos
-OpenStreetMap Contributors. (2023). Nominatim: Open geocoding API. https://nominatim.openstreetmap.org
-Organización Mundial de la Salud. (2023). Traumatismos causados por el tránsito. https://www.who.int/es/news-room/fact-sheets/detail/road-traffic-injuries
-Streamlit. (s.f.). *Streamlit documentation*.  
+- Kimball, R., & Ross, M. (2013). The data warehouse toolkit: The definitive guide to dimensional modeling (3.ª ed.). Wiley.
+- Ministerio de Transportes y Comunicaciones. (2024). Imprudencia del conductor y exceso de velocidad son las principales causas de accidentes en el país. https://www.gob.pe/institucion/mtc/noticias/959363-imprudencia-del-conductor-y-exceso-de-velocidad-son-las-principales-causas-de-accidentes-en-el-pais
+- Observatorio Nacional de Seguridad Vial. (s.f.). Observatorio Nacional de Seguridad Vial. https://www.onsv.gob.pe/
+- Observatorio Nacional de Seguridad Vial. (2026). Datos abiertos ONSV. https://www.onsv.gob.pe/datosabiertos
+- OpenStreetMap Contributors. (2023). Nominatim: Open geocoding API. https://nominatim.openstreetmap.org
+- Organización Mundial de la Salud. (2023). Traumatismos causados por el tránsito. https://www.who.int/es/news-room/fact-sheets/detail/road-traffic-injuries
+- Streamlit. (s.f.). *Streamlit documentation*.  
 https://docs.streamlit.io/
-Microsoft. (s.f.). *Documentación de SQL Server*. Microsoft Learn.  
+- Microsoft. (s.f.). *Documentación de SQL Server*. Microsoft Learn.  
 https://learn.microsoft.com/es-es/sql/
 
