@@ -360,7 +360,7 @@ La tabla de hechos `FACT_VEHICULOS` almacena información relacionada con los ve
 | vehiculo_sin_revision | INT          | Indicador de vehículo sin CITV o revisión técnica vigente.       |
 
 
-# 8. Modelamiento de Data Dimensional
+# 8. Diseño Data WhareHouse
 
 El Data Warehouse de siniestralidad vial fue diseñado bajo un modelo dimensional de tipo galaxia o constelación de hechos. Este enfoque permite analizar el fenómeno desde tres perspectivas principales: los siniestros registrados, las personas involucradas y los vehículos asociados.
 
@@ -527,7 +527,7 @@ La propuesta es factible porque utiliza datos abiertos, herramientas accesibles 
 
 * Promover el uso de herramientas de Business Intelligence en instituciones públicas, ya que facilitan la transformación de datos abiertos en información útil para la toma de decisiones basada en evidencia.
 
-# 10.Referencias
+# 12.Referencias
 
 Kimball, R., & Ross, M. (2013). The data warehouse toolkit: The definitive guide to dimensional modeling (3.ª ed.). Wiley.
 Ministerio de Transportes y Comunicaciones. (2024). Imprudencia del conductor y exceso de velocidad son las principales causas de accidentes en el país. https://www.gob.pe/institucion/mtc/noticias/959363-imprudencia-del-conductor-y-exceso-de-velocidad-son-las-principales-causas-de-accidentes-en-el-pais
